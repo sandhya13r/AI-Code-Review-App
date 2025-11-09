@@ -1,0 +1,141 @@
+/* --- Background --- */
+[data-testid="stAppViewContainer"] {
+  background: radial-gradient(circle at top left, #0b0b0b, #000000);
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Title --- */
+h1 {
+  color: #00ff80;
+  text-shadow: 0 0 8px rgba(0, 255, 128, 0.4);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* --- Tabs --- */
+[data-testid="stTabs"] button {
+  background: #101010;
+  color: #e0e0e0;
+  border: 1px solid #00ff80;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 255, 128, 0.15);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  padding: 8px 20px;
+  margin: 0 5px;
+}
+
+[data-testid="stTabs"] button:hover {
+  background: linear-gradient(145deg, #00ff80, #00995e);
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 255, 128, 0.4);
+}
+
+/* Active tab (highlighted in green) */
+[data-testid="stTabs"] button[aria-selected="true"] {
+  background: linear-gradient(145deg, #00ff80, #00995e);
+  color: #000;
+  box-shadow: 0 0 14px rgba(0, 255, 128, 0.5);
+  border: none !important;
+}
+
+/* 🔥 Completely remove the gray line under the tabs */
+section[data-testid="stTabs"] {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+[data-testid="stTabs"] > div:first-child {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+[data-testid="stTabs"]::before,
+[data-testid="stTabs"]::after {
+  display: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* --- Upload Box --- */
+[data-testid="stFileUploader"] {
+  border-radius: 15px;
+  background-color: #0d0d0d !important;
+  border: 1px solid rgba(0, 255, 128, 0.3);
+  box-shadow: 0 0 8px rgba(0, 255, 128, 0.15);
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+/* Soft hover glow (no popup) */
+[data-testid="stFileUploader"]:hover {
+  box-shadow: 0 0 14px rgba(0, 255, 128, 0.35);
+}
+
+/* Upload text alignment */
+[data-testid="stFileUploader"] div[role="button"] {
+  text-align: left !important;
+  padding-left: 20px;
+}
+
+/* --- Text Area --- */
+textarea {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(0, 255, 128, 0.25) !important;
+  box-shadow: 0 0 6px rgba(0, 255, 128, 0.1);
+  transition: all 0.3s ease;
+}
+textarea:hover, textarea:focus {
+  border-color: #00ff80 !important;
+  box-shadow: 0 0 14px rgba(0, 255, 128, 0.4);
+}
+
+/* --- Buttons --- */
+div.stButton > button {
+  background: linear-gradient(145deg, #00ff80, #00995e);
+  color: #000;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  padding: 0.6em 1.2em;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 128, 0.25);
+}
+div.stButton > button:hover {
+  box-shadow: 0 0 16px rgba(0, 255, 128, 0.45);
+}
+
+/* --- Code Display --- */
+[data-testid="stCodeBlock"] {
+  background-color: #101010 !important;
+  border-left: 4px solid #00ff80;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 255, 128, 0.2);
+  padding: 10px;
+}
+
+/* --- Footer --- */
+footer {
+  color: #00ff80;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff80;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00995e;
+}
