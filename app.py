@@ -1,6 +1,7 @@
 import streamlit as st
 from pathlib import Path
 from openai import OpenAI
+import os
 
 # --- Page Configuration ---
 st.set_page_config(page_title="AI Code Reviewer", page_icon="🧠", layout="wide")
@@ -13,7 +14,7 @@ def load_css(file_name):
 load_css("assets/theme_green.css")
 
 # --- Initialize OpenAI Client ---
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", None)
 
 if OPENAI_API_KEY:
     client = OpenAI(api_key=OPENAI_API_KEY)
