@@ -1,7 +1,7 @@
 # AI Code Reviewer
 
 An AI-powered web application that analyses Python code and provides detailed feedback on logic, style and efficiency.  
-This project was built as part of the Elevate Labs Python Internship submission.
+This project was built as part of the Elevate Labs Python Developer Internship submission.
 
 ---
 
@@ -14,7 +14,7 @@ It’s designed for students, beginners and professionals who want to write clea
 
 ## Why I Made This
 
-As part of my Elevate Labs Python Internship, I wanted to build something practical that demonstrates both my Python and Streamlit skills.  
+As part of my Elevate Labs Python Developer Internship, I wanted to build something practical that demonstrates both my Python and Streamlit skills.  
 This project bridges the gap between writing code and receiving AI-powered review, enabling users to instantly receive feedback and improve their code quality.
 
 ---
@@ -51,27 +51,35 @@ This project bridges the gap between writing code and receiving AI-powered revie
 
 ### 1. Clone the repository  
 
-git clone https://github.com/sandhya13r/AI-Code-Review-App.git
-cd AI-Code-Review-App 
+     git clone https://github.com/sandhya13r/AI-Code-Review-App.git
+
+     cd AI-Code-Review-App 
 
 ### 2.Create and activate a virtual environment
-python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On Mac/Linux:
-source venv/bin/activate
+
+      python -m venv venv
+      
+### On Windows:
+
+    venv\Scripts\activate 
+    
+### On Mac/Linux:
+
+     source venv/bin/activate 
 
 ### 3. Install dependencies
-pip install -r requirements.txt
+
+     pip install -r requirements.txt
 
 ### 4. Add your OpenAI API key
 
 Create a file named .streamlit/secrets.toml in the project root and add:
 
-OPENAI_API_KEY = "your_api_key_here"
+    OPENAI_API_KEY = "your_api_key_here"
 
 ### 5. Run the Streamlit app
-streamlit run app.py
+
+     streamlit run app.py
 
 ## Screenshots
 ### Home Page
